@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Domain
+
 class HomeInteractor: PresenterToInteractorHomeProtocol {
     weak var presenter: InteractorToPresenterHomeProtocol?
     var productService: ProductServicesProtocol?

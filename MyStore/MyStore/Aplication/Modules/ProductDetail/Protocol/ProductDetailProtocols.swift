@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Domain
 
 protocol ViewToPresenterProductDetailProtocol : AnyObject {
     var view: PresenterToViewProductDetailProtocol? {get set}

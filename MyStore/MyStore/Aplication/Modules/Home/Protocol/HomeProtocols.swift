@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Domain
 
 protocol ViewToPresenterHomeProtocol : AnyObject {
     var view: PresenterToViewHomeProtocol? {get set}

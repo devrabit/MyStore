@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Domain
 
 class HomeViewController: UIViewController {
     var collectionView: UICollectionView!

@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Domain
 
 class ProductDetailRouter: PresenterToRouterProductDetailProtocol{
     /// this var get the  product detail storyboard

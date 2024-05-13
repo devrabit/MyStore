@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Domain
+import Infrastructure
 
 protocol ProductServicesOuputDelegate: AnyObject {
     func fetchProducts(products: [Product])
