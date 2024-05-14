@@ -78,16 +78,6 @@ class ProductDetailViewController: UIViewController {
         table.register(ProductPriceTableViewCell.self, forCellReuseIdentifier: NibIds.productPrice.rawValue)
         table.register(ProductAttributeTableViewCell.self, forCellReuseIdentifier: NibIds.attributeProductCell.rawValue)
         
-//        let nibProductPrice = UINib(nibName: NibIds.productPrice.rawValue, bundle: nil)
-//        let nibProductAttr = UINib(nibName: NibIds.attributeProductCell.rawValue, bundle: nil)
-//        let nibProductImg = UINib(nibName: NibIds.productImage.rawValue, bundle: nil)
-//        let nibProductSectionTitle = UINib(nibName: NibIds.productSectionTitle.rawValue, bundle: nil)
-//
-//        table.register(nibProductPrice, forCellReuseIdentifier:  NibIds.productPrice.rawValue)
-//        table.register(nibProductAttr, forCellReuseIdentifier: NibIds.attributeProductCell.rawValue)
-//        table.register(nibProductImg, forCellReuseIdentifier: NibIds.productImage.rawValue)
-//        table.register(nibProductSectionTitle, forCellReuseIdentifier: NibIds.productSectionTitle.rawValue)
-        
     }
 }
 extension ProductDetailViewController: PresenterToViewProductDetailProtocol {

@@ -66,7 +66,6 @@ class SeekerViewController: UIViewController {
     func setupUI() {
         view.backgroundColor = UIColor.white
         
-        // Configurar la vista de búsqueda
         let searchView = UIView()
         searchView.translatesAutoresizingMaskIntoConstraints = false
         searchView.backgroundColor = UIColor(red: 254/255, green: 255/255, blue: 0, alpha: 1)
@@ -79,19 +78,10 @@ class SeekerViewController: UIViewController {
         customView.layer.cornerRadius = 5
         searchView.addSubview(customView)
         
-        // Configurar el campo de texto
-        
         customView.addSubview(txtSearch)
-        
-        // Configurar el icono de búsqueda
-        
         customView.addSubview(imgGlass)
-        
-        // Configurar el botón de cancelar
-        
         searchView.addSubview(btnCancel)
         
-        // Configurar las restricciones
         NSLayoutConstraint.activate([
             searchView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             searchView.leadingAnchor.constraint(equalTo: view.leadingAnchor),

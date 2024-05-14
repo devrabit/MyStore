@@ -31,13 +31,11 @@ public class HomeViewController: UIViewController {
     }
     
     func setUpView() {
-        // Main view
         let mainView = UIView()
         mainView.translatesAutoresizingMaskIntoConstraints = false
         mainView.backgroundColor = .systemBackground
         view.addSubview(mainView)
         
-        // Collection View
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 10
         layout.minimumInteritemSpacing = 5
@@ -51,7 +49,6 @@ public class HomeViewController: UIViewController {
 
         mainView.addSubview(collectionView)
         
-        // Constraints for collectionView
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.topAnchor),
             collectionView.leadingAnchor.constraint(equalTo: mainView.leadingAnchor),
@@ -59,7 +56,6 @@ public class HomeViewController: UIViewController {
             collectionView.bottomAnchor.constraint(equalTo: mainView.bottomAnchor)
         ])
         
-        // Constraints for mainView
         NSLayoutConstraint.activate([
             mainView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             mainView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
