@@ -34,7 +34,6 @@ class ProductDetailViewController: UIViewController {
     func setUpView() {
         view.backgroundColor = .systemBackground
                 
-        // Configurar la tabla
         table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
         table.dataSource = self
@@ -42,7 +41,7 @@ class ProductDetailViewController: UIViewController {
         table.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         view.addSubview(table)
         
-        // Establecer restricciones
+        
         NSLayoutConstraint.activate([
             table.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             table.leadingAnchor.constraint(equalTo: view.leadingAnchor),
